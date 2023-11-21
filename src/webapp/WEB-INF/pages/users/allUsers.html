@@ -27,7 +27,7 @@
             </td>
 
             <td>
-                <form action = "#" th:action="@{/{id}/delete(id=${list.getId()})}" method = "DELETE">
+                <form th:method = "DELETE" th:action="@{/{id}/delete(id=${list.getId()})}">
                     <input type = "submit" value = "Delete">
                 </form>
             </td>
